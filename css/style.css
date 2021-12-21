@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ .bodycontent{
+     animation-name: fade;
+     animation-duration: 2s;
+ }
+ body{
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,h3{
+    color: white;
+    padding: 20px 50px;
+    text-shadow:
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
+}
+p{
+    color: gray;
+    padding: 20px 50px;
+    
+}
+p.AboutPara{
+    color: white;
+    font-size: 120%;
+    margin: 10px;
+    padding-left: 40px; 
+    padding-top: 30px;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+form{
+    margin-left: 50px;
+    color: white;
+}
+.form{
+    border-radius: 8px;
+    border-color: transparent;
+    background: #212121;
+    color: white;
+}
+
+nav{
+    height: 60px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+nav .logo{
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    margin-left: -50px;
+    letter-spacing: 1px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active{
+    color: chocolate;
+}
+nav .menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media (max-width:940px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li {
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+}
