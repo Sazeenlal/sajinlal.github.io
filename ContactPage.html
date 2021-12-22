@@ -7,7 +7,7 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="background-image: url('images/gradientbgphoto.jpg');">
+    <body>
         <nav>
             <div class="logo">Portfolio</div>
             <input type="checkbox" id="click">
@@ -15,29 +15,32 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul>
-                <li><a class="active" href="HomePage.html">Home</a></li>
+                <li><a href="HomePage.html">Home</a></li>
                 <li><a href="AboutPage.html">About</a></li>
                 <li><a href="WritingPage.html">Writing</a></li>
                 <li><a href="WorkPage.html">Graphics Work</a></li>
-                <li><a href="ContactPage.html">Contact</a></li>
+                <li><a  class="active"  href="ContactPage.html">Contact</a></li>
             </ul>
         </nav>
         <div class="bodycontent" style="padding-top: 50px">
             <div><h1 style="font-size: 350%; font-style: bold;">Let's Talk</h1></div>
             <div><p style="font-size:130%">Get in touch via the form below, or by emailing <span style="color: chocolate;">sazeenlal7@gmail.com</span></p></div>
             </br>
-            <div>
+            <div class="container">
                 <form action="/action_page.php" method="post">
-                    <label for="name">Name:</label></br>
-                    <input class="form" type="text" style="width: 585px; height: 35px;" id="name" name="fullname" placeholder="Enter your name">
-                    </br></br>
-                    <label for="email">Email Address:</label></br>
-                    <input class="form" type="email" style="width: 585px; height: 35px;" id="mail" name="email" placeholder="Enter your email address">
-                    </br></br>
-                    <label for="message">Message:</label></br>
-                    <textarea class="form" name="message" style="width: 585px; height: 120px;" placeholder="Enter your message"></textarea>
-                    </br></br>
-                    <input type="submit" style="width: 80px; height: 30px;" name="submit">
+                    <div>
+                        <label for="name">Name:</label></br>
+                        <input class="inputbox" type="text" required="Required" name="fullname" placeholder="  Enter your name"></div>
+                        </br>
+                    <div>
+                        <label for="email">Email Address:</label></br>
+                        <input class="inputbox" type="email" required="Required" name="email" placeholder="  Enter your email address"></div>
+                        </br>
+                    <div>
+                        <label for="message">Message:</label></br>
+                        <textarea class="inputbox" style="height: 120px;" name="message" placeholder="  Enter your message"></textarea></div>
+                        </br>
+                    <input type="submit" name="submit" value="Submit">
                 </form>
             </div>
         </div>

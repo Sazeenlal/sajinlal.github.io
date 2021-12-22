@@ -14,6 +14,7 @@
      animation-duration: 2s;
  }
  body{
+    background-image: url('../images/gradientbgphoto.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -45,15 +46,30 @@ p.AboutPara{
     -1px  1px 0 #000,
      1px  1px 0 #000;
 }
-form{
-    margin-left: 50px;
+.container{
     color: white;
+    padding: 0 50px;
+    width: 700px;
+    max-width: 100%;
 }
-.form{
-    border-radius: 8px;
-    border-color: transparent;
-    background: #212121;
+.container .inputbox{
+    width: 100%;
     color: white;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background: #212121;
+    font-size: 16px;
+}
+input[type=submit]{
+    background: #212121;
+    border: none;
+    color: chocolate;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 40px;
+    width: 100px;
 }
 
 nav{
@@ -86,8 +102,11 @@ nav ul li a{
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
-nav ul li a:hover, nav ul li a.active{
+nav ul li a.active{
     color: chocolate;
+}
+nav ul li a:hover {
+    color: grey;
 }
 nav .menu-btn i{
     color: white;
