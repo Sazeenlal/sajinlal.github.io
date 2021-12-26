@@ -12,6 +12,7 @@
  .bodycontent{
      animation-name: fade;
      animation-duration: 2s;
+     padding-top: 100px;
  }
  body{
     background-image: url('../images/gradientbgphoto.jpg');
@@ -32,7 +33,6 @@ h1,h3{
 p{
     color: gray;
     padding: 20px 50px;
-    
 }
 p.AboutPara{
     color: white;
@@ -79,6 +79,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px 0px 100px;
+    position: fixed;
+    width: 100%;
 }
 nav .logo{
     font-size: 35px;
