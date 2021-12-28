@@ -10,9 +10,11 @@
     100% {opacity: 1;}
  }
  .bodycontent{
-     animation-name: fade;
-     animation-duration: 2s;
-     padding-top: 100px;
+    animation-name: fade;
+    animation-duration: 2s;
+    padding-top: 100px;
+    width: 700px;
+    max-width: 100%;
  }
  .bodycontent h3{
     font-size: 350%;
@@ -45,9 +47,10 @@ p{
     width: 700px;
     max-width: 100%;
 }
-#aboutbody, .bodycontent{
+#aboutbody{
     width: 700px;
     max-width: 100%;
+    text-align: justify;
 }
 #aboutbody p a{
     color: chocolate;
