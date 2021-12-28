@@ -14,6 +14,10 @@
      animation-duration: 2s;
      padding-top: 100px;
  }
+ .bodycontent h3{
+    font-size: 350%;
+    font-style: bold;
+ }
  body{
     background-image: url('../images/gradientbgphoto.jpg');
     background-position: center center;
@@ -33,24 +37,37 @@ h1,h3{
 p{
     color: gray;
     padding: 20px 50px;
-}
-p.AboutPara{
-    color: white;
-    font-size: 120%;
-    margin: 10px;
-    padding-left: 40px; 
-    padding-top: 30px;
-    text-shadow:
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+    font-size: 130%;
 }
 .container{
     color: white;
     padding: 0 50px;
     width: 700px;
     max-width: 100%;
+}
+#aboutbody, .bodycontent{
+    width: 700px;
+    max-width: 100%;
+}
+#aboutbody p a{
+    color: chocolate;
+    text-decoration: none;
+}
+#aboutbody .AboutPara a{
+    font-weight: bold;
+    text-decoration: none;
+    color: chocolate;
+}
+#aboutbody p{
+    color: white;
+    font-size: 120%;
+    padding-left: 50px;
+    padding-top: 30px;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 .container .inputbox{
     width: 100%;
@@ -71,6 +88,13 @@ input[type=submit]{
     height: 40px;
     width: 100px;
 }
+.bodycontent .container textarea{
+    height: 120px;
+}
+.bodycontent p a{
+    color: chocolate;
+    text-decoration: none;
+}
 
 nav{
     height: 60px;
@@ -88,6 +112,11 @@ nav .logo{
     font-weight: 600;
     margin-left: -50px;
     letter-spacing: 1px;
+    text-decoration: none;
+}
+nav .logo a{
+    color: white;
+    text-decoration: none;
 }
 nav ul{
     display: flex;
