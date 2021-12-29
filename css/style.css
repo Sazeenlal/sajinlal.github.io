@@ -103,29 +103,58 @@ input[type=submit]{
     animation-duration: 2s;
     
     display: grid;
+    border-radius: 8px;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         "main main main"
-        "container1 container2 container3";
+        "container1 container2 container3"
+        "container4 container5 container6";
     grid-gap: 0.2rem;
 }
 main{
-    padding-top: 100px;
+    padding: 100px 0;
     grid-area: main;
 }
 #container1{
     grid-area: container1;
     background-image: linear-gradient(#978362, black);
+    border-radius: 8px;
+    padding:10px;
 }
 #container2{
     grid-area: container2;
     background-image: linear-gradient(#978362, black);
+    border-radius: 8px;
+    padding:10px;
 }
 #container3{
     grid-area: container3;
     background-image: linear-gradient(#978362, black);
+    border-radius: 8px;
+    padding:10px;
+}
+#container4{
+    grid-area: container4;
+    background-image: linear-gradient(#978362, black);
+    border-radius: 8px;
+    padding:10px;
+}
+#container5{
+    grid-area: container5;
+    background-image: linear-gradient(#978362, black);
+    border-radius: 8px;
+    padding:10px;
+}
+#container6{
+    grid-area: container6;
+    background-image: linear-gradient(#978362, black);
+    border-radius: 8px;
+    padding:10px;
+}
+#container6 p{
+    color: white;
 }
 
 nav{
@@ -208,4 +237,24 @@ nav .menu-btn i{
         font-size: 20px;
         display: block;
     }
+}
+
+@media only screen and (max-width:550px) {
+    .workcontainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "main"
+            "container1"
+            "container2"
+            "container3"
+            "container4"
+            "container5"
+            "container6";
+    }
+    #container1, #container2, #container3, #container4, #container5, #container6{
+        height: 200px;
+        padding:10px;
+        height: fit-content;
+    }    
 }
